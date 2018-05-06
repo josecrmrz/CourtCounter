@@ -7,6 +7,9 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    TextView scoreViewTeamA = null;
+    TextView scoreViewTeamB = null;
+
     private int scoreTeamA = 0;
     private int scoreTeamB = 0;
 
@@ -14,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        scoreViewTeamA = findViewById(R.id.team_a_score);
+        scoreViewTeamB = findViewById(R.id.team_b_score);
 
         if (savedInstanceState != null) {
             scoreTeamA = savedInstanceState.getInt("scoreTeamA");
@@ -35,24 +41,29 @@ public class MainActivity extends AppCompatActivity {
      * Displays the given score for Team A.
      */
     private void displayForTeamA(int score) {
-        TextView scoreView = findViewById(R.id.team_a_score);
-        scoreView.setText(String.valueOf(score));
+        scoreViewTeamA.setText(String.valueOf(score));
     }
 
-    public void addThreeForTeamA(View v) {
-        scoreTeamA += 3;
+    public void addTouchdownForTeamA(View v) {
+        scoreTeamA += 6;
 
         displayForTeamA(scoreTeamA);
     }
 
-    public void addTwoForTeamA(View v) {
+    public void addExtraPointForTeamA(View v) {
+        scoreTeamA += 1;
+
+        displayForTeamA(scoreTeamA);
+    }
+
+    public void add2PointForTeamA(View v) {
         scoreTeamA += 2;
 
         displayForTeamA(scoreTeamA);
     }
 
-    public void addFreeThrowForTeamA(View v) {
-        scoreTeamA += 1;
+    public void addFieldGoalForTeamA(View v) {
+        scoreTeamA += 3;
 
         displayForTeamA(scoreTeamA);
     }
@@ -61,24 +72,29 @@ public class MainActivity extends AppCompatActivity {
      * Displays the given score for Team B.
      */
     private void displayForTeamB(int score) {
-        TextView scoreView = findViewById(R.id.team_b_score);
-        scoreView.setText(String.valueOf(score));
+        scoreViewTeamB.setText(String.valueOf(score));
     }
 
-    public void addThreeForTeamB(View v) {
-        scoreTeamB += 3;
+    public void addTouchdownTeamB(View v) {
+        scoreTeamB += 6;
 
         displayForTeamB(scoreTeamB);
     }
 
-    public void addTwoForTeamB(View v) {
+    public void addExtraPointTeamB(View v) {
+        scoreTeamB += 1;
+
+        displayForTeamB(scoreTeamB);
+    }
+
+    public void add2PointsForTeamB(View v) {
         scoreTeamB += 2;
 
         displayForTeamB(scoreTeamB);
     }
 
-    public void addFreeThrowForTeamB(View v) {
-        scoreTeamB += 1;
+    public void addFieldGoalForTeamB(View v) {
+        scoreTeamB += 3;
 
         displayForTeamB(scoreTeamB);
     }
