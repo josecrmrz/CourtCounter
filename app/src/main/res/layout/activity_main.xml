@@ -50,50 +50,34 @@
 
             <Button
                 android:id="@+id/team_a_touchdown"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_24"
-                android:layout_marginRight="@dimen/margin_24"
+                style="@style/style_score_button"
                 android:layout_marginTop="@dimen/margin_16"
                 android:onClick="addTouchdownForTeamA"
-                android:text="@string/touchdown"
-                android:textAllCaps="true" />
+                android:text="@string/touchdown" />
 
             <Button
                 android:id="@+id/team_a_extra_point"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/style_score_button"
                 android:layout_marginBottom="@dimen/margin_8"
-                android:layout_marginLeft="@dimen/margin_24"
-                android:layout_marginRight="@dimen/margin_24"
                 android:layout_marginTop="@dimen/margin_8"
                 android:onClick="addExtraPointForTeamA"
-                android:text="@string/extra_point"
-                android:textAllCaps="true" />
+                android:text="@string/extra_point" />
 
             <Button
                 android:id="@+id/team_a_two_points"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/style_score_button"
                 android:layout_marginBottom="@dimen/margin_8"
-                android:layout_marginLeft="@dimen/margin_24"
-                android:layout_marginRight="@dimen/margin_24"
                 android:layout_marginTop="@dimen/margin_8"
                 android:onClick="add2PointForTeamA"
-                android:text="@string/two_pt_conversion"
-                android:textAllCaps="true" />
+                android:text="@string/two_pt_conversion" />
 
             <Button
                 android:id="@+id/team_a_field_goal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/style_score_button"
                 android:layout_marginBottom="@dimen/margin_8"
-                android:layout_marginLeft="@dimen/margin_24"
-                android:layout_marginRight="@dimen/margin_24"
                 android:layout_marginTop="@dimen/margin_8"
                 android:onClick="addFieldGoalForTeamA"
-                android:text="@string/field_goal"
-                android:textAllCaps="true" />
+                android:text="@string/field_goal" />
 
         </LinearLayout>
 
@@ -134,50 +118,34 @@
 
             <Button
                 android:id="@+id/team_b_touchdown"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_24"
-                android:layout_marginRight="@dimen/margin_24"
+                style="@style/style_score_button"
                 android:layout_marginTop="@dimen/margin_16"
                 android:onClick="addTouchdownTeamB"
-                android:text="@string/touchdown"
-                android:textAllCaps="true" />
+                android:text="@string/touchdown" />
 
             <Button
                 android:id="@+id/team_b_extra_point"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/style_score_button"
                 android:layout_marginBottom="@dimen/margin_8"
-                android:layout_marginLeft="@dimen/margin_24"
-                android:layout_marginRight="@dimen/margin_24"
                 android:layout_marginTop="@dimen/margin_8"
                 android:onClick="addExtraPointTeamB"
-                android:text="@string/extra_point"
-                android:textAllCaps="true" />
+                android:text="@string/extra_point" />
 
             <Button
                 android:id="@+id/team_b_two_points"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/style_score_button"
                 android:layout_marginBottom="@dimen/margin_8"
-                android:layout_marginLeft="@dimen/margin_24"
-                android:layout_marginRight="@dimen/margin_24"
                 android:layout_marginTop="@dimen/margin_8"
                 android:onClick="add2PointsForTeamB"
-                android:text="@string/two_pt_conversion"
-                android:textAllCaps="true" />
+                android:text="@string/two_pt_conversion" />
 
             <Button
                 android:id="@+id/team_b_field_goal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/style_score_button"
                 android:layout_marginBottom="@dimen/margin_8"
-                android:layout_marginLeft="@dimen/margin_24"
-                android:layout_marginRight="@dimen/margin_24"
                 android:layout_marginTop="@dimen/margin_8"
                 android:onClick="addFieldGoalForTeamB"
-                android:text="@string/field_goal"
-                android:textAllCaps="true" />
+                android:text="@string/field_goal" />
 
         </LinearLayout>
 
